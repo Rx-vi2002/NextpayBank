@@ -1,0 +1,8 @@
+Invoice #1000
+Date: 2024-01-15
+Amount: $5,000.00
+Description: Admin Invoice - FLAG{ID0R_1NS3CUR3_0BJ3CT_R3F3R3NC3}
+Status: PAID
+
+This invoice contains sensitive administrative information
+that should only be accessible to authorized administrators.
