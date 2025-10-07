@@ -1,9 +1,11 @@
 <?php
-// Load environment variables
-require_once 'load_env.php';
-loadEnv(__DIR__ . '/.env');
+// Load environment variables (only for local development)
+if (file_exists(__DIR__ . '/.env')) {
+    require_once 'load_env.php';
+    loadEnv(__DIR__ . '/.env');
+}
 
-// Get service URI from environment
+// Get service URI from environment (works for both local and Azure)
 $serviceUri = getenv('AIVEN_SERVICE_URI');
 
 // Parse the service URI
